@@ -1,0 +1,20 @@
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\bin\Debug\YoutubeToMP3.exe.config
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\bin\Debug\YoutubeToMP3.exe
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\bin\Debug\YoutubeToMP3.pdb
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\bin\Debug\MetroFramework.dll
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.csprojResolveAssemblyReference.cache
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.YoutubeMP3.resources
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.Properties.Resources.resources
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.csproj.GenerateResource.Cache
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.exe
+C:\Users\Keegan\AppData\Local\Temporary Projects\YoutubeToMP3\obj\Debug\YoutubeToMP3.pdb
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\YoutubeToMP3.exe.config
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.exe
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.pdb
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\YoutubeToMP3.exe
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\YoutubeToMP3.pdb
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\MetroFramework.dll
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.csprojResolveAssemblyReference.cache
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.YoutubeMP3.resources
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.Properties.Resources.resources
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.csproj.GenerateResource.Cache
