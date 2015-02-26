@@ -36,6 +36,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\ModernUI.1.3.0.0\lib\net45\MetroFramework.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\SHACheck\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>

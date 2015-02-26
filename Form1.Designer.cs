@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.web = new System.Windows.Forms.WebBrowser();
+            this.songTitleLabel = new MetroFramework.Controls.MetroTextBox();
+            this.SongTitle = new MetroFramework.Controls.MetroLabel();
+            this._artistLabel = new MetroFramework.Controls.MetroLabel();
             this.youtubeURL = new MetroFramework.Controls.MetroTextBox();
             this.download = new MetroFramework.Controls.MetroButton();
-            this.songTitleLabel = new MetroFramework.Controls.MetroLabel();
-            this.artistLabel = new MetroFramework.Controls.MetroLabel();
-            this.web = new System.Windows.Forms.WebBrowser();
+            this.artistLabel = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // directorySearcher1
@@ -41,6 +43,51 @@
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // web
+            // 
+            this.web.Location = new System.Drawing.Point(438, 12);
+            this.web.MinimumSize = new System.Drawing.Size(20, 20);
+            this.web.Name = "web";
+            this.web.Size = new System.Drawing.Size(480, 348);
+            this.web.TabIndex = 4;
+            // 
+            // songTitleLabel
+            // 
+            this.songTitleLabel.Lines = new string[] {
+        "metroTextBox1"};
+            this.songTitleLabel.Location = new System.Drawing.Point(128, 139);
+            this.songTitleLabel.MaxLength = 32767;
+            this.songTitleLabel.Name = "songTitleLabel";
+            this.songTitleLabel.PasswordChar = '\0';
+            this.songTitleLabel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.songTitleLabel.SelectedText = "";
+            this.songTitleLabel.Size = new System.Drawing.Size(219, 23);
+            this.songTitleLabel.TabIndex = 5;
+            this.songTitleLabel.Text = "metroTextBox1";
+            this.songTitleLabel.UseSelectable = true;
+            // 
+            // SongTitle
+            // 
+            this.SongTitle.AutoSize = true;
+            this.SongTitle.Location = new System.Drawing.Point(55, 139);
+            this.SongTitle.Name = "SongTitle";
+            this.SongTitle.Size = new System.Drawing.Size(67, 19);
+            this.SongTitle.Style = MetroFramework.MetroColorStyle.Blue;
+            this.SongTitle.TabIndex = 3;
+            this.SongTitle.Text = "Song Title";
+            this.SongTitle.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // _artistLabel
+            // 
+            this._artistLabel.AutoSize = true;
+            this._artistLabel.Location = new System.Drawing.Point(55, 172);
+            this._artistLabel.Name = "_artistLabel";
+            this._artistLabel.Size = new System.Drawing.Size(40, 19);
+            this._artistLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this._artistLabel.TabIndex = 3;
+            this._artistLabel.Text = "Artist";
+            this._artistLabel.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // youtubeURL
             // 
@@ -63,6 +110,7 @@
             // 
             this.download.Location = new System.Drawing.Point(358, 90);
             this.download.Name = "download";
+            this.download.Size = new System.Drawing.Size(75, 23);
             this.download.Style = MetroFramework.MetroColorStyle.Blue;
             this.download.TabIndex = 1;
             this.download.Text = "Download";
@@ -70,44 +118,31 @@
             this.download.UseSelectable = true;
             this.download.Click += new System.EventHandler(this.download_Click);
             // 
-            // songTitleLabel
-            // 
-            this.songTitleLabel.AutoSize = true;
-            this.songTitleLabel.Location = new System.Drawing.Point(55, 139);
-            this.songTitleLabel.Name = "songTitleLabel";
-            this.songTitleLabel.Size = new System.Drawing.Size(67, 19);
-            this.songTitleLabel.Style = MetroFramework.MetroColorStyle.Blue;
-            this.songTitleLabel.TabIndex = 3;
-            this.songTitleLabel.Text = "Song Title";
-            this.songTitleLabel.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
             // artistLabel
             // 
-            this.artistLabel.AutoSize = true;
-            this.artistLabel.Location = new System.Drawing.Point(55, 158);
+            this.artistLabel.Lines = new string[] {
+        "metroTextBox1"};
+            this.artistLabel.Location = new System.Drawing.Point(128, 168);
+            this.artistLabel.MaxLength = 32767;
             this.artistLabel.Name = "artistLabel";
-            this.artistLabel.Size = new System.Drawing.Size(40, 19);
-            this.artistLabel.Style = MetroFramework.MetroColorStyle.Blue;
-            this.artistLabel.TabIndex = 3;
-            this.artistLabel.Text = "Artist";
-            this.artistLabel.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // web
-            // 
-            this.web.Location = new System.Drawing.Point(438, 12);
-            this.web.MinimumSize = new System.Drawing.Size(20, 20);
-            this.web.Name = "web";
-            this.web.Size = new System.Drawing.Size(480, 348);
-            this.web.TabIndex = 4;
+            this.artistLabel.PasswordChar = '\0';
+            this.artistLabel.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.artistLabel.SelectedText = "";
+            this.artistLabel.Size = new System.Drawing.Size(219, 23);
+            this.artistLabel.TabIndex = 5;
+            this.artistLabel.Text = "metroTextBox1";
+            this.artistLabel.UseSelectable = true;
             // 
             // YoutubeMP3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 383);
-            this.Controls.Add(this.web);
             this.Controls.Add(this.artistLabel);
             this.Controls.Add(this.songTitleLabel);
+            this.Controls.Add(this.web);
+            this.Controls.Add(this._artistLabel);
+            this.Controls.Add(this.SongTitle);
             this.Controls.Add(this.download);
             this.Controls.Add(this.youtubeURL);
             this.Name = "YoutubeMP3";
@@ -121,11 +156,13 @@
         #endregion
 
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.WebBrowser web;
+        private MetroFramework.Controls.MetroTextBox songTitleLabel;
+        private MetroFramework.Controls.MetroLabel SongTitle;
+        private MetroFramework.Controls.MetroLabel _artistLabel;
         private MetroFramework.Controls.MetroTextBox youtubeURL;
         private MetroFramework.Controls.MetroButton download;
-        private MetroFramework.Controls.MetroLabel songTitleLabel;
-        private MetroFramework.Controls.MetroLabel artistLabel;
-        private System.Windows.Forms.WebBrowser web;
+        private MetroFramework.Controls.MetroTextBox artistLabel;
     }
 }
 

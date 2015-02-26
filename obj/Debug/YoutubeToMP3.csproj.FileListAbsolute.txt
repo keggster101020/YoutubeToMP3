@@ -18,3 +18,4 @@ C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.YoutubeMP3.resources
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.Properties.Resources.resources
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.csproj.GenerateResource.Cache
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\MetroFramework.Design.dll

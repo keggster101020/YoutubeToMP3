@@ -28,6 +28,7 @@ namespace YoutubeToMP3
 
         private void download_Click(object sender, EventArgs e)
         {
+            download.Enabled = false;
             String websiteID = "http://www.dirpy.com/studio?url=" + youtubeURL.Text;
             websiteID.Trim();
             web.Navigate(websiteID);
@@ -36,33 +37,44 @@ namespace YoutubeToMP3
             web.DocumentCompleted += (senders, eventArgs) =>
             {
                 var eleTitle = (mshtml.IHTMLInputElement)web.Document.GetElementById("title").DomElement;
-                songTitleLabel.Text = "Title: " + eleTitle.value;
-
-                var eleArtist = (mshtml.IHTMLInputElement)web.Document.GetElementById("artist").DomElement;
-                if (eleArtist.value != null) artistLabel.Text = "Artist: " + eleArtist.value;
+                if (!eleTitle.value.ToString().Contains("-")) 
+                    songTitleLabel.Text = eleTitle.value;
                 else
                 {
-                    if (songTitleLabel.Text.ToString().Contains('-') || !String.IsNullOrEmpty(songTitleLabel.Text))
-                    {
-                        artistLabel.Text = "Artist: " + songTitleLabel.Text.ToString().Split('-')[0];
-                    }
+
+                    var eleArtist = (mshtml.IHTMLInputElement)web.Document.GetElementById("artist").DomElement;
+                    if (eleArtist.value != null) 
+                        artistLabel.Text = eleArtist.value;
                     else
                     {
-                        artistLabel.Text = "Unknown Artist";
+                        if (SongTitle.Text.ToString().Contains('-') || !String.IsNullOrEmpty(SongTitle.Text))
+                        {
+                            String[] titleArtist = eleTitle.value.ToString().Split('-');
+                            songTitleLabel.Text = titleArtist[1];
+                            artistLabel.Text = titleArtist[0];
+                        }
+                        else
+                        {
+                            artistLabel.Text = "Unknown Artist";
+                        }
                     }
                 }
             };
 
 
-
             //downloadSong();
+            download.Enabled = true;
         }
 
         private void downloadSong()
         {
+            download.Enabled = false;
             try
             {
-
+                foreach(HtmlElement item in web.Document.GetElementsByTagName("input")){
+                    if (item.GetAttribute("value").Equals("Record Audio"))
+                        item.InvokeMember("click");
+                }
                 
             }
             catch(Exception excp){
@@ -71,9 +83,9 @@ namespace YoutubeToMP3
         }
 
 
-        void wb_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        /*void wb_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            Console.WriteLine("We have Bing");
-        }
+            Console.WriteLine("Success");
+        }*/
     }
 }
