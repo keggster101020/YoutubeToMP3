@@ -23,11 +23,12 @@ namespace YoutubeToMP3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void download_Click(object sender, EventArgs e)
         {
+            clearForm();
             download.Enabled = false;
             String websiteID = "http://www.dirpy.com/studio?url=" + youtubeURL.Text;
             websiteID.Trim();
@@ -37,13 +38,13 @@ namespace YoutubeToMP3
             web.DocumentCompleted += (senders, eventArgs) =>
             {
                 var eleTitle = (mshtml.IHTMLInputElement)web.Document.GetElementById("title").DomElement;
-                if (!eleTitle.value.ToString().Contains("-")) 
+                if (!eleTitle.value.ToString().Contains("-"))
                     songTitleLabel.Text = eleTitle.value;
                 else
                 {
 
                     var eleArtist = (mshtml.IHTMLInputElement)web.Document.GetElementById("artist").DomElement;
-                    if (eleArtist.value != null) 
+                    if (eleArtist.value != null)
                         artistLabel.Text = eleArtist.value;
                     else
                     {
@@ -62,26 +63,40 @@ namespace YoutubeToMP3
             };
 
 
-            //downloadSong();
+            downloadSong(websiteID);
             download.Enabled = true;
         }
 
-        private void downloadSong()
+        private void downloadSong(String ID)
         {
             download.Enabled = false;
-            try
+
+            //var holder = web.Document.GetElementsByTagName("input");
+            WebBrowser webb = new WebBrowser();
+            webb.Navigate(ID);
+            webb.ScriptErrorsSuppressed = true;
+      
+            if (webb.ReadyState != WebBrowserReadyState.Complete) return; //check to make sure that there are elements
+            foreach (HtmlElement item in web.Document.GetElementsByTagName("input"))
             {
-                foreach(HtmlElement item in web.Document.GetElementsByTagName("input")){
+                if (!item.Equals(null))
+                {
                     if (item.GetAttribute("value").Equals("Record Audio"))
-                        item.InvokeMember("click");
+                    {
+                        MetroMessageBox.Show(this, "" + item.GetAttribute("value"));
+                        web.Document.InvokeScript("download('audio')");
+                    }
                 }
-                
-            }
-            catch(Exception excp){
-                MessageBox.Show(excp.ToString());
             }
         }
 
+        public void clearForm()
+        {
+            songTitleLabel.Text = "";
+            artistLabel.Text = "";
+            web = new WebBrowser();
+           
+        }
 
         /*void wb_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
