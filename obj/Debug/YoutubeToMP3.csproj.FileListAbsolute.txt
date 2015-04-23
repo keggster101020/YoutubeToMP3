@@ -19,3 +19,7 @@ C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.Properties.Resources.resources
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\obj\Debug\YoutubeToMP3.csproj.GenerateResource.Cache
 C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\MetroFramework.Design.dll
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\YoutubeExtractor.dll
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Keegan\Documents\Visual Studio 2012\Projects\YoutubeToMP3\YoutubeToMP3\bin\Debug\YoutubeExtractor.xml

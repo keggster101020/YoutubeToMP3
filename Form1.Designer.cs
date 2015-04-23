@@ -28,21 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.songTitleLabel = new MetroFramework.Controls.MetroTextBox();
             this.SongTitle = new MetroFramework.Controls.MetroLabel();
             this._artistLabel = new MetroFramework.Controls.MetroLabel();
             this.youtubeURL = new MetroFramework.Controls.MetroTextBox();
             this.download = new MetroFramework.Controls.MetroButton();
             this.artistLabel = new MetroFramework.Controls.MetroTextBox();
-            this.web = new System.Windows.Forms.WebBrowser();
+            this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
-            // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // songTitleLabel
             // 
@@ -125,20 +119,29 @@
             this.artistLabel.Text = "metroTextBox1";
             this.artistLabel.UseSelectable = true;
             // 
-            // web
+            // metroProgressBar1
             // 
-            this.web.Location = new System.Drawing.Point(439, 30);
-            this.web.MinimumSize = new System.Drawing.Size(20, 20);
-            this.web.Name = "web";
-            this.web.Size = new System.Drawing.Size(489, 330);
-            this.web.TabIndex = 6;
+            this.metroProgressBar1.Location = new System.Drawing.Point(55, 221);
+            this.metroProgressBar1.Name = "metroProgressBar1";
+            this.metroProgressBar1.Size = new System.Drawing.Size(378, 19);
+            this.metroProgressBar1.TabIndex = 7;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(439, 221);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 8;
+            this.metroLabel1.Text = "metroLabel1";
             // 
             // YoutubeMP3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 383);
-            this.Controls.Add(this.web);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.metroProgressBar1);
             this.Controls.Add(this.artistLabel);
             this.Controls.Add(this.songTitleLabel);
             this.Controls.Add(this._artistLabel);
@@ -155,14 +158,14 @@
 
         #endregion
 
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
         private MetroFramework.Controls.MetroTextBox songTitleLabel;
         private MetroFramework.Controls.MetroLabel SongTitle;
         private MetroFramework.Controls.MetroLabel _artistLabel;
         private MetroFramework.Controls.MetroTextBox youtubeURL;
         private MetroFramework.Controls.MetroButton download;
         private MetroFramework.Controls.MetroTextBox artistLabel;
-        private System.Windows.Forms.WebBrowser web;
+        private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }
 
